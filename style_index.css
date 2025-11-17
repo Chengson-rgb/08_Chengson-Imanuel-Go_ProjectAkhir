@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #5D5452;
+    --accent-color: #B5A092;
+    --secondary-color: #1C3A3B;
+
+    --bg: #f1f0e2;
+    --text-dark: #333;
+    --text-light: #6A6A6A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px; 
+    width: auto; 
+    display: block; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    margin-left: 0; 
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-left: 0; 
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.content {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background: #dcdcdc;
+    font-size: 15px;
+}
+
+th {
+    background: #c4c4c4;
+    padding: 10px;
+    font-weight: 600;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+}
+
+.update,
+.delete {
+    color: blue;
+    text-decoration: none;
+}
+
+.update:hover,
+.delete:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+    background-color: white;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+}

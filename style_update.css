@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #5D5452;
+    --accent-color: #B5A092;
+    --secondary-color: #1C3A3B;
+    --bg: #f1f0e2;
+    --box-bg: #ECECEC;
+    --text-dark: #333;
+    --text-light: #6A6A6A;
+    --border-color: #d4d4d4;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+.update-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.update-box {
+    width: 100%;
+    max-width: 550px;
+    background: var(--box-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+.update-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: var(--accent-color);
+}
+
+table tr:last-child td {
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.save-btn {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5C5248;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.save-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+select.input-field {
+    width: 90%;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+}
